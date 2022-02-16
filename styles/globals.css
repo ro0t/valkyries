@@ -14,3 +14,20 @@ a {
 * {
   box-sizing: border-box;
 }
+
+body {
+  animation: dimmer 10s linear both;
+}
+
+@keyframes dimmer {
+  0% {
+    background: #fff;
+    filter: invert(0%);
+  }
+
+  100% {
+    background: #000;
+    filter: invert(100%);
+  }
+}
+
